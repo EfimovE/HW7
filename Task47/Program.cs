@@ -7,7 +7,7 @@
 
 // Метод для создания двумерного массива.
 
-double[,] CreateMatrixRndInt (int row, int col, double min, double max)
+double[,] CreateMatrixRndDouble (int row, int col, double min, double max)
 {
     double[,] matrix = new double [row, col];
     Random rnd = new Random();
@@ -44,5 +44,5 @@ Console.WriteLine("Введите минимальное значение эле
 int minElem = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите максимальное значение элемента массива и нажмите Enter.");
 int maxElem = Convert.ToInt32(Console.ReadLine());
-double [,] array2D = CreateMatrixRndInt (m, n, minElem, maxElem);
+double [,] array2D = CreateMatrixRndDouble (m, n, minElem, maxElem);
 PrintMatrix (array2D);
